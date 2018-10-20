@@ -1,21 +1,20 @@
-// client-side js
-// run by the browser each time your view template is loaded
+// check to see server works
 
-console.log('hello world :o');
+console.log('halo :o');
 
-// our default array of dreams
+// default array of dreams
 const dreams = [
-  'Find and count some sheep',
-  'Climb a really tall mountain',
-  'Wash the dishes'
+  'Run a marathon',
+  'Finish School',
+  'Do the laundry'
 ];
 
-// define variables that reference elements on our page
+// set your constants
 const dreamsList = document.getElementById('dreams');
 const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements['dream'];
 
-// a helper function that creates a list item for a given dream
+// append/create the list item
 const appendNewDream = function(dream) {
   const newListItem = document.createElement('li');
   newListItem.innerHTML = dream;
